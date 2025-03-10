@@ -4,29 +4,47 @@ Write a function that takes a non-negative integer n and a string s as parameter
 Напишите функцию, которая принимает неотрицательное целое число n и строку s в качестве параметров. Функция должна вернуть новую строку, где s повторяется ровно n раз.
 */
 
-#include <iostream>
-#include <string>
-#include <cstring>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-std::string repeat_str(int n, const std::string& s) {
-    std::string result;
-    for (int i = 0; i < n; i++) {
-        result += s;
+char* repeat_str(int n, const char* s) {
+    int length = strlen(s) * n;
+    char* result = (char*) malloc(length + 1);
+
+    if (result == NULL) {
+        return NULL;
     }
+
+    char* ptr = result;
+    for (int i = 0; i < n; i++) {
+        strcpy(ptr, s);
+        ptr += strlen(s);
+    }
+
+    *ptr = '\0';
+    
     return result;
 }
 
 int main() {
     int n;
-    std::string s;
+    char s[100];
 
-    std::cout << "Enter a string: ";
-    std::cin >> s;
+    printf("Enter a string: ");
+    scanf("%99s", s);
+    
+    printf("Enter repetition count: ");
+    scanf("%d", &n);
 
-    std::cout << "Enter repetition count: ";
-    std::cin >> n;
+    char* repeated = repeat_str(n, s);
 
-    std::cout << "Repeated string: " << repeat_str(n, s) << std::endl;
-
+    if (repeated) {
+        printf("Repeated string: %s\n", repeated);
+        free(repeated);
+    } else {
+        printf("Memory allocation failed.\n");
+    }
+    
     return 0;
 }
