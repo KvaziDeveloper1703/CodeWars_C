@@ -14,37 +14,42 @@ Examples:
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-int square_digits(int given_number) {
-    char buffer[50] = "";
-    char temporary[10];
+unsigned long long square_digits(unsigned given_number) {
+    unsigned long long result = 0;
+    unsigned long long factor = 1;
+    unsigned digits[10];
+    int count = 0;
     
-    int reversed = 0;
-    int original = given_number;
+    if (given_number == 0) {
+        return 0;
+    }
+    
     while (given_number > 0) {
-        reversed = reversed * 10 + given_number % 10;
+        digits[count++] = given_number % 10;
         given_number /= 10;
     }
     
-    while (reversed > 0 || original == 0) {
-        int digit = reversed % 10;
-        sprintf(temporary, "%d", digit * digit);
-        strcat(buffer, temporary);
-        reversed /= 10;
-        original = -1;
+    for (int i = count - 1; i >= 0; i--) {
+        unsigned squared = digits[i] * digits[i];
+        
+        if (squared >= 10) {
+            result = result * 100 + squared;
+        } else {
+            result = result * 10 + squared;
+        }
     }
     
-    return atoi(buffer);
+    return result;
 }
 
 int main() {
-    int number;
+    unsigned number;
     printf("Enter a number: ");
-    scanf("%d", &number);
+    scanf("%u", &number);
     
-    int result = square_digits(number);
-    printf("Squared digits concatenated: %d\n", result);
+    unsigned long long result = square_digits(number);
+    printf("Squared digits concatenated: %llu\n", result);
     
     return 0;
 }
