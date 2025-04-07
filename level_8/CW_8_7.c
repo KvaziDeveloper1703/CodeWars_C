@@ -1,16 +1,18 @@
 /*
-Complete the square_sum function so that it squares each number in the given list and returns the sum of these squared values.
+You need to create a function that squares each number in the given list and returns the sum of these squared values.
 
-Дополните функцию square_sum, чтобы она возводила в квадрат каждое число из переданного списка и возвращала сумму этих квадратов.
+Вас нужно создать функцию, которая возводит в квадрат каждое число из переданного списка и возвращает сумму этих квадратов.
+
+https://www.codewars.com/kata/515e271a311df0350d00000f
 */
 
 #include <stdio.h>
 
-int square_sum(int numbers[], int size) {
+int square_sum(int given_numbers[], int given_size) {
     int sum = 0;
 
-    for (int i = 0; i < size; i++) {
-        sum += numbers[i] * numbers[i];
+    for (int i = 0; i < given_size; i++) {
+        sum += given_numbers[i] * given_numbers[i];
     }
 
     return sum;
