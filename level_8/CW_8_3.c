@@ -2,6 +2,8 @@
 You are given an array of numbers. Return the sum of all positive numbers in the array.
 
 Вам дан массив чисел. Верните сумму всех положительных чисел в массиве.
+
+https://www.codewars.com/kata/5715eaedb436cf5606000381
 */
 
 #include <stdio.h>
