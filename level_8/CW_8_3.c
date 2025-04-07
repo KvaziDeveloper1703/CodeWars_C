@@ -8,21 +8,21 @@ https://www.codewars.com/kata/5715eaedb436cf5606000381
 
 #include <stdio.h>
 
-int sum_of_positives(int arr[], int size) {
+int sum_of_positives(int given_array[], int given_size) {
     int sum = 0;
-    for (int i = 0; i < size; i++) {
-        if (arr[i] > 0) {
-            sum += arr[i];
+    for (int i = 0; i < given_size; i++) {
+        if (given_array[i] > 0) {
+            sum += given_array[i];
         }
     }
     return sum;
 }
 
 int main() {
-    int arr[] = {1, -4, 7, 12};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int array[] = {1, -4, 7, 12};
+    int size = sizeof(array) / sizeof(array[0]);
     
-    printf("Sum of positive numbers: %d\n", sum_of_positives(arr, size));
+    printf("Sum of positive numbers: %d\n", sum_of_positives(array, size));
     
     return 0;
 }
