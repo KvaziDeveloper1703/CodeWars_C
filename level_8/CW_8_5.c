@@ -1,37 +1,50 @@
 /*
-We need a function that converts an integer into a string.
+You need to create a function that converts an integer into a string.
 
-Нужно написать функцию, которая преобразует целое число в строку.
+Вам нужно написать функцию, которая преобразует целое число в строку.
+
+https://www.codewars.com/kata/5265326f5fda8eb1160004c8
 */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>  // Required for malloc() and free()
 
+// Converts an integer to a dynamically allocated string
 char *number_to_string(int given_number) {
-    char *str = malloc(12);
+    // Allocate 12 bytes of memory to hold the string version of the number
+    // This size is enough for a 32-bit signed integer: "-2147483648" + '\0'
+    char *string = malloc(12);
 
-    if (str == NULL) {
-        return NULL;
+    // Check if malloc failed
+    if (string == NULL) {
+        return NULL;  // Return NULL to indicate failure
     }
 
-    sprintf(str, "%d", given_number);
-    return str;
+    // Use sprintf to convert the integer to a string
+    sprintf(string, "%d", given_number);
+
+    // Return the pointer to the newly created string
+    return string;
 }
 
 int main() {
     int number;
-    
-    printf("Введите целое число: ");
+
+    printf("Enter an integer: ");
     scanf("%d", &number);
-    
-    char *str = number_to_string(number);
-    
-    if (str != NULL) {
-        printf("Число в виде строки: %s\n", str);
-        free(str);
+
+    char *string = number_to_string(number);
+
+    // Check if memory allocation was successful
+    if (string != NULL) {
+        printf("Number as a string: %s\n", string);
+
+        // Free the dynamically allocated memory to avoid memory leaks
+        free(string);
     } else {
-        printf("Ошибка: не удалось выделить память.\n");
+        // Handle memory allocation failure
+        printf("Error: could not allocate memory.\n");
     }
-    
+
     return 0;
 }
