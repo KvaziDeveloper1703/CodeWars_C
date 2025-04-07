@@ -1,7 +1,9 @@
 /*
-Given a number (integer or decimal), return its opposite (additive inverse).
+You need to create a function that takes a number and return its opposite.
 
-Дано число (целое или десятичное). Верните его противоположное (аддитивный инверс).
+Вам необходимо создать функцию, которая принимает число и возвращает его противоположность.
+
+https://www.codewars.com/kata/56dec885c54a926dcd001095
 */
 
 #include <stdio.h>
