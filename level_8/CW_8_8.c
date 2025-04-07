@@ -1,39 +1,41 @@
 /*
-Create a function that removes the first and last characters of a given string.
+You need to create a function that removes the first and last characters of a given string.
 
 Создайте функцию, которая удаляет первый и последний символы из переданной строки.
+
+https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
 */
 
 #include <stdio.h>
 #include <string.h>
 
-char* remove_char(char* dst, const char* src) {
-    int length = strlen(src);
+char* remove_char(char* given_processed_string, const char* given_original_string) {
+    int length = strlen(given_original_string);
 
     if (length < 2) {
-        dst[0] = '\0';
-        return dst;
+        given_processed_string[0] = '\0';
+        return given_processed_string;
     }
 
     for (int i = 1; i < length - 1; i++) {
-        dst[i - 1] = src[i];
+        given_processed_string[i - 1] = given_original_string[i];
     }
 
-    dst[length - 2] = '\0';
-    
-    return dst;
+    given_processed_string[length - 2] = '\0';
+
+    return given_processed_string;
 }
 
 int main() {
-    char src[100];
-    char dst[100];
+    char original_string[100];
+    char processed_string[100];
 
     printf("Enter a string: ");
-    scanf("%99s", src);
+    scanf("%99s", original_string);
 
-    remove_char(dst, src);
+    remove_char(processed_string, original_string);
 
-    printf("Modified string: %s\n", dst);
-    
+    printf("Modified string: %s\n", processed_string);
+
     return 0;
 }
