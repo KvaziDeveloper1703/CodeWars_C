@@ -1,13 +1,18 @@
 /*
-Create a function that takes an integer as an argument and returns "Even" if the number is even or "Odd" if the number is odd.
+You need to create a function that takes an integer as an argument and returns "Even" if the number is even or "Odd" if the number is odd.
 
-Создайте функцию, которая принимает целое число в качестве аргумента и возвращает "Even", если число чётное, или "Odd", если число нечётное.
+Вам нужно создать функцию, которая принимает целое число в качестве аргумента и возвращает "Even", если число чётное, или "Odd", если число нечётное.
+
+https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 */
 
 #include <stdio.h>
 
 const char* even_or_odd(int given_number) {
-    return (given_number % 2 == 0) ? "Even" : "Odd";
+    if (given_number % 2 == 0)
+        return "Even";
+    else
+        return "Odd";
 }
 
 int main() {
