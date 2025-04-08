@@ -1,14 +1,15 @@
 /*
-Write a function that checks if a string has the same number of 'x' and 'o'.
-+ Case insensitive.
-+ The string may contain any characters.
+You need to write a function that checks if a string has the same number of 'x' and 'o'.
++ Case insensitive;
++ The string may contain any characters;
 + If no 'x' or 'o' are present, return true.
 
 Напишите функцию, которая проверяет, содержит ли строка одинаковое количество символов 'x' и 'o'.
-
-+ Регистр не учитывается.
-+ Строка может содержать любые символы.
++ Регистр не учитывается;
++ Строка может содержать любые символы;
 + Если в строке нет 'x' и 'o', вернуть true.
+
+https://www.codewars.com/kata/55908aad6620c066bc00002a
 */
 
 #include <stdio.h>
