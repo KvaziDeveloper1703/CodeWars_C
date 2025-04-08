@@ -1,11 +1,11 @@
 /*
-Write a function that returns the number (count) of vowels in the given string.
-We will consider a, e, i, o, u as vowels for this Kata (but not y).
+You need to create a function that returns the number of vowels in the given string.
 The input string will only consist of lowercase letters and/or spaces.
 
-Напишите функцию, которая возвращает количество (счет) гласных букв в заданной строке.
-Мы будем считать гласными только a, e, i, o, u (но не y).
+Вам нужно создать функцию, которая возвращает количество гласных букв в заданной строке.
 Входная строка будет содержать только строчные буквы и/или пробелы.
+
+https://www.codewars.com/kata/54ff3102c1bad923760001f3
 */
 
 #include <stdio.h>
@@ -14,7 +14,7 @@ int count_vowels(const char *given_string) {
     int count = 0;
     while (*given_string) {
         switch (*given_string) {
-            case 'a': case 'e': case 'i': case 'o': case 'u':
+            case 'a': case 'e': case 'i': case 'o': case 'u': case 'y':
                 count++;
                 break;
         }
