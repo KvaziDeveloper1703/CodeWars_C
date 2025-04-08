@@ -1,7 +1,9 @@
 /*
-Write a function that checks whether a given integer is a perfect square.
+You need to create a function that checks whether a given integer is a perfect square.
 
-Напишите функцию, которая проверяет, является ли заданное целое число идеальным квадратом.
+Вам нужно написать функцию, которая проверяет, является ли заданное целое число идеальным квадратом.
+
+https://www.codewars.com/kata/54c27a33fb7da0db0100040e
 */
 
 #include <stdbool.h>
