@@ -1,15 +1,17 @@
 /*
-An isogram is a word that has no repeating letters, consecutive or non-consecutive.
+An isogram is a word that has no repeating letters.
 
-Write a function that checks whether a given string is an isogram.
-+ Ignore letter case.
+You need to create a function that checks whether a given string is an isogram.
++ Ignore letter case;
 + The empty string is considered an isogram.
 
-Изограмма – это слово, в котором нет повторяющихся букв, ни подряд, ни вразброс.
+Изограмма – это слово, в котором нет повторяющихся букв.
 
-Напишите функцию, которая проверяет, является ли переданная строка изограммой.
-+ Регистр букв игнорируется.
+Вам нужно написать функцию, которая проверяет, является ли переданная строка изограммой.
++ Регистр букв игнорируется;
 + Пустая строка считается изограммой.
+
+https://www.codewars.com/kata/54ba84be607a92aa900000f1
 */
 
 #include <stdio.h>
@@ -19,7 +21,7 @@ Write a function that checks whether a given string is an isogram.
 
 bool is_isogram(const char *given_string) {
     bool letters[26] = {false};
-    
+
     while (*given_string) {
         if (isalpha(*given_string)) {
             char lower = tolower(*given_string);
@@ -35,8 +37,10 @@ bool is_isogram(const char *given_string) {
 }
 
 int main() {
-    printf("%d\n", is_isogram("aba"));
-    printf("%d\n", is_isogram("moOse"));
-    printf("%d\n", is_isogram(""));
+    printf("%d\n", is_isogram("background"));
+    printf("%d\n", is_isogram("lamp"));
+    printf("%d\n", is_isogram("letter"));
+    printf("%d\n", is_isogram("Alphabet"));
+    printf("%d\n", is_isogram("Hello"));
     return 0;
 }
