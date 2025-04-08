@@ -1,20 +1,27 @@
 /*
-Write a function accum that transforms a string as follows:
-Each letter is repeated as many times as its position in the string (starting from 1),
-the first letter is uppercase, the rest are lowercase.
+You need to create a function that transforms a string as follows:
+Each letter is repeated as many times as its position in the string, the first letter is uppercase, the rest are lowercase.
 Parts are separated by "-".
 
 Examples:
-accum("abcd") → "A-Bb-Ccc-Dddd"
-accum("RqaEzty") → "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+Input: "abcd"
+Output: "A-Bb-Ccc-Dddd"
 
-Напишите функцию accum, которая преобразует строку следующим образом:
-Каждая буква повторяется столько раз, каково её положение в строке (начиная с 1), первый символ в верхнем регистре, остальные в нижнем.
+Input: "RqaEzty"
+Output: "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+
+Вам нужно написать функцию, которая преобразует строку следующим образом:
+Каждая буква повторяется столько раз, каково её положение в строке, первый символ в верхнем регистре, остальные в нижнем.
 Части разделяются "-".
 
 Примеры:
-accum("abcd") → "A-Bb-Ccc-Dddd"
-accum("RqaEzty") → "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+Ввод: "abcd"
+Вывод: "A-Bb-Ccc-Dddd"
+
+Ввод: "RqaEzty"
+Вывод: "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+
+https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
 */
 
 #include <stdio.h>
@@ -25,20 +32,20 @@ accum("RqaEzty") → "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 char* accum(const char *given_string) {
     size_t length = strlen(given_string);
     size_t result_size = length * (length + 1) / 2 + length;
-    char *result = (char*)malloc(result_size * sizeof(char));
+    char *result = malloc(result_size * sizeof(char));
     if (!result) return NULL;
     
-    size_t pos = 0;
+    size_t position = 0;
     for (size_t i = 0; i < length; i++) {
-        result[pos++] = toupper(given_string[i]);
+        result[position++] = toupper(given_string[i]);
         for (size_t j = 0; j < i; j++) {
-            result[pos++] = tolower(given_string[i]);
+            result[position++] = tolower(given_string[i]);
         }
         if (i < length - 1) {
-            result[pos++] = '-';
+            result[position++] = '-';
         }
     }
-    result[pos] = '\0';
+    result[position] = '\0';
     return result;
 }
 
