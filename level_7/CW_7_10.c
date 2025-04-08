@@ -1,5 +1,5 @@
 /*
-You need to write a function that checks if a string has the same number of 'x' and 'o'.
+Write a function that checks if a string has the same number of 'x' and 'o'.
 + Case insensitive;
 + The string may contain any characters;
 + If no 'x' or 'o' are present, return true.

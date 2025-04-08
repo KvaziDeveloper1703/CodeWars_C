@@ -1,5 +1,5 @@
 /*
-You need to write a function that takes any non-negative integer as an argument and returns it with its digits in descending order.
+Write a function that takes any non-negative integer as an argument and returns it with its digits in descending order.
 
 Examples:
 Input: 42145
@@ -8,7 +8,7 @@ Output: 54421
 Input: 145263
 Output: 654321
 
-Вам нужно написать функцию, которая принимает любое неотрицательное целое число и возвращает его цифры, расположенные в порядке убывания.
+Напишите функцию, которая принимает любое неотрицательное целое число и возвращает его цифры, расположенные в порядке убывания.
 
 Примеры:
 Ввод: 42145

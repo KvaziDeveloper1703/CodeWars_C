@@ -1,8 +1,8 @@
 /*
-You need to create a function that returns the number of vowels in the given string.
+Write a function that returns the number of vowels in the given string.
 The input string will only consist of lowercase letters and/or spaces.
 
-Вам нужно создать функцию, которая возвращает количество гласных букв в заданной строке.
+Напишите функцию, которая возвращает количество гласных букв в заданной строке.
 Входная строка будет содержать только строчные буквы и/или пробелы.
 
 https://www.codewars.com/kata/54ff3102c1bad923760001f3

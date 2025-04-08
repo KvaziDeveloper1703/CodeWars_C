@@ -1,5 +1,5 @@
 /*
-You need to make a function that squares every digit of a number and concatenates results.
+Write a function that squares every digit of a number and concatenates results.
 
 Examples:
 Input: 9119
@@ -8,7 +8,7 @@ Output: 811181
 Input: 765
 Output: 493625
 
-Вам нужно создать функцию, которая будет возводить в квадрат каждую цифру числа и объединять результаты в одну строку.
+Напишите функцию, которая будет возводить в квадрат каждую цифру числа и объединять результаты в одну строку.
 
 Примеры:
 Ввод: 9119

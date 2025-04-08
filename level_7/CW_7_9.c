@@ -1,13 +1,13 @@
 /*
 An isogram is a word that has no repeating letters.
 
-You need to create a function that checks whether a given string is an isogram.
+Write a function that checks whether a given string is an isogram.
 + Ignore letter case;
 + The empty string is considered an isogram.
 
 Изограмма – это слово, в котором нет повторяющихся букв.
 
-Вам нужно написать функцию, которая проверяет, является ли переданная строка изограммой.
+Напишите функцию, которая проверяет, является ли переданная строка изограммой.
 + Регистр букв игнорируется;
 + Пустая строка считается изограммой.
 

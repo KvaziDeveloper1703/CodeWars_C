@@ -1,10 +1,10 @@
 /*
-You need to write a function that takes a string and returns a new string with all vowels removed.
+Write a function that takes a string and returns a new string with all vowels removed.
 
 Example:
 "This website is for losers LOL!" -> "Ths wbst s fr lsrs LL!"
 
-Ваша нужно написать функцию, которая принимает строку и возвращает новую строку, из которой удалены все гласные.
+Напишите функцию, которая принимает строку и возвращает новую строку, из которой удалены все гласные.
 
 Пример:
 "This website is for losers LOL!" -> "Ths wbst s fr lsrs LL!"

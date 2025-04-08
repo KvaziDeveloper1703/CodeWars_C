@@ -1,5 +1,5 @@
 /*
-You need to create a function that transforms a string as follows:
+Write a function that transforms a string as follows:
 Each letter is repeated as many times as its position in the string, the first letter is uppercase, the rest are lowercase.
 Parts are separated by "-".
 
@@ -10,7 +10,7 @@ Output: "A-Bb-Ccc-Dddd"
 Input: "RqaEzty"
 Output: "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 
-Вам нужно написать функцию, которая преобразует строку следующим образом:
+Напишите функцию, которая преобразует строку следующим образом:
 Каждая буква повторяется столько раз, каково её положение в строке, первый символ в верхнем регистре, остальные в нижнем.
 Части разделяются "-".
 
