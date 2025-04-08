@@ -1,7 +1,7 @@
 /*
-You need to create a function that takes a non-negative integer N and a string S as parameters. It should return a new string where S is repeated exactly N times.
+Write a function that takes a non-negative integer N and a string S as parameters. It should return a new string where S is repeated exactly N times.
 
-Вам нужно написать функцию, которая принимает неотрицательное целое число N и строку S в качестве параметров. Функция должна вернуть новую строку, где S повторяется ровно N раз.
+Напишите функцию, которая принимает неотрицательное целое число N и строку S в качестве параметров. Функция должна вернуть новую строку, где S повторяется ровно N раз.
 
 https://www.codewars.com/kata/56dec885c54a926dcd001095
 */

@@ -1,7 +1,7 @@
 /*
-You need to create a function that reverses the string passed into it.
+Write a function that reverses the string passed into it.
 
-Вам нужно создать функцию которая переворачивала бы переданную строку.
+Напишите функцию которая переворачивала бы переданную строку.
 
 https://www.codewars.com/kata/5168bb5dfe9a00b126000018
 */

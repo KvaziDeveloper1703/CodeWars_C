@@ -1,7 +1,7 @@
 /*
-You need to create a function that takes an integer as an argument and returns "Even" if the number is even or "Odd" if the number is odd.
+Write a function that takes an integer as an argument and returns "Even" if the number is even or "Odd" if the number is odd.
 
-Вам нужно создать функцию, которая принимает целое число в качестве аргумента и возвращает "Even", если число чётное, или "Odd", если число нечётное.
+Напишите функцию, которая принимает целое число в качестве аргумента и возвращает "Even", если число чётное, или "Odd", если число нечётное.
 
 https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 */

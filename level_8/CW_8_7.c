@@ -1,7 +1,7 @@
 /*
-You need to create a function that squares each number in the given list and returns the sum of these squared values.
+Write a function that squares each number in the given list and returns the sum of these squared values.
 
-Вас нужно создать функцию, которая возводит в квадрат каждое число из переданного списка и возвращает сумму этих квадратов.
+Напишите функцию, которая возводит в квадрат каждое число из переданного списка и возвращает сумму этих квадратов.
 
 https://www.codewars.com/kata/515e271a311df0350d00000f
 */

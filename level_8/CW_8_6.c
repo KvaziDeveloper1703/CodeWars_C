@@ -1,9 +1,9 @@
 /*
-You need to create a function that takes a boolean value and returns:
+Write a function that takes a boolean value and returns:
 + "Yes" if the value is true;
 + "No" if the value is false.
 
-Вас нужно создать функцию, которая принимает логическое значение и возвращает:
+Напишите функцию, которая принимает логическое значение и возвращает:
 + "Yes", если значение true;
 + "No", если значение false.
 

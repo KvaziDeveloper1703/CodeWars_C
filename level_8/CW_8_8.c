@@ -1,7 +1,7 @@
 /*
-You need to create a function that removes the first and last characters of a given string.
+Write a function that removes the first and last characters of a given string.
 
-Создайте функцию, которая удаляет первый и последний символы из переданной строки.
+Напишите функцию, которая удаляет первый и последний символы из переданной строки.
 
 https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
 */
