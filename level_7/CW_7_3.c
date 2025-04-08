@@ -1,15 +1,23 @@
 /*
-You are asked to square every digit of a number and concatenate them.
+You need to make a function that squares every digit of a number and concatenates results.
 
 Examples:
-9119 → 811181
-765 → 493625
+Input: 9119
+Output: 811181
 
-В этом задании вам нужно возвести в квадрат каждую цифру числа и объединить их в одну строку.
+Input: 765
+Output: 493625
+
+Вам нужно создать функцию, которая будет возводить в квадрат каждую цифру числа и объединять результаты в одну строку.
 
 Примеры:
-9119 → 811181
-765 → 493625
+Ввод: 9119
+Вывод: 811181
+
+Ввод: 765
+Вывод: 493625
+
+https://www.codewars.com/kata/546e2562b03326a88e000020
 */
 
 #include <stdio.h>
